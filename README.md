@@ -4,10 +4,17 @@ This repository contains the data and code produced for the following paper:
 
 Title: Enhanced vegetation drought resistance induced by elephant disturbance in Africa
 
-In this projects, most of the image preprocessing, data analysis and visualization was carried out in python 3.8.
+In this projects, most of image preprocessing, data analysis, and visualization were conducted using python 3.8 in Jupyter Notebook.
 
-This repository contains the source data and the scripts to produce the main figures.
+This repository contains:
+source data: Located in the Data folder.
+Jupyter Notebook scripts: Found in the code folder, further organized into:
+    code/MS for main manuscript (MS) figures.
+    code/SI for supplementary information (SI) figures.
+    
+Each script is fully documented for data entry, calculations, and plotting.
 
+The pairing of each figure and its corresponding script is shown in the table below:
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>

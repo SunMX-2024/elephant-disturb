@@ -1,15 +1,14 @@
 # Data and code for paper: Enhanced vegetation drought resistance induced by elephant disturbance in Africa
 
-This repository contains the data and code produced for the following paper: Enhanced vegetation drought resistance induced by elephant disturbance in Africa
-----
+##This repository contains the data and code produced for the following paper: Enhanced vegetation drought resistance induced by elephant disturbance in Africa
 
 In this projects, most of image preprocessing, data analysis, and visualization were conducted using python 3.8 in Jupyter Notebook.
 
 This repository contains:
-source data: Located in the Data folder.
-Jupyter Notebook scripts: Found in the code folder, further organized into:
-    code/MS for main manuscript (MS) figures.
-    code/SI for supplementary information (SI) figures.
+*source data: Located in the Data folder.
+*Jupyter Notebook scripts: Found in the code folder, further organized into:
+    *code/MS for main manuscript (MS) figures.
+    *code/SI for supplementary information (SI) figures.
     
 Each script is fully documented for data entry, calculations, and plotting.
 

@@ -532,5 +532,5 @@ The pairing of each figure and its corresponding script is shown in the table be
 
 ## System Requirements
 ### Python Dependencies
-This projects mainly depends on the Python scientific stack./
+This projects mainly depends on the Python scientific stack.\
 GDAL, numpy, scipy, Pandas, scikit-learn, netCDF4,matplotlib

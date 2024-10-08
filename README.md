@@ -5,8 +5,8 @@
 In this projects, most of image preprocessing, data analysis, and visualization were conducted using python 3.8 in Jupyter Notebook.
 
 This repository contains:
-* source data: Located in the Data folder.
-* Jupyter Notebook scripts: Found in the code folder, further organized into:
+* __source data__: Located in the Data folder.
+* __Jupyter Notebook scripts__: Found in the code folder, further organized into:
     * code/MS for main manuscript (MS) figures.
     * code/SI for supplementary information (SI) figures.
     

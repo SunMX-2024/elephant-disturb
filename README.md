@@ -5,7 +5,7 @@
 In this projects, most of image preprocessing, data analysis, and visualization were conducted using python 3.8 in Jupyter Notebook.
 
 This repository contains:
-* __source data__: The source data for each grid TIFF file used in the scripts is available at https://zenodo.org/records/13901576. This data is referenced and processed within the respective Jupyter Notebook scripts in code repository.
+* __source data__: Source data for each grid TIFF file used in the scripts is available at https://zenodo.org/records/13901576.
 * __Jupyter Notebook scripts__: Found in the code folder, further organized into:
     * code/MS for main manuscript (MS) figures.
     * code/SI for supplementary information (SI) figures.

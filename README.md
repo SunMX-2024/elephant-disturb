@@ -7,7 +7,7 @@ This repository contains:
 * __Jupyter Notebook scripts__: Found in the code folder, further organized into:
     * code/MS for main manuscript (MS) figures.
     * code/SI for supplementary information (SI) figures.
-* __source data__: source-data for each grid TIFF file used in the scripts is available at https://zenodo.org/records/13901576.
+* __source data__: source-data used in the scripts is available at https://zenodo.org/records/13901576.
     
 Each script is fully documented for data entry, calculations, and plotting.
 

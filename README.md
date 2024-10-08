@@ -1,5 +1,6 @@
 # Data and code for paper: Enhanced vegetation drought resistance induced by elephant disturbance in Africa
 
+## Overview
 In this projects, most of image preprocessing, data analysis, and visualization were conducted using python 3.8 in Jupyter Notebook.
 
 This repository contains:
@@ -529,4 +530,7 @@ The pairing of each figure and its corresponding script is shown in the table be
  </tr>
 </table>
 
- 
+## System Requirements
+### Python Dependencies
+This projects mainly depends on the Python scientific stack./
+GDAL, numpy, scipy, Pandas, scikit-learn, netCDF4,matplotlib

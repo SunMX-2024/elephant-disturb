@@ -1,6 +1,6 @@
 # Input data
 
-The files below are included in the repository. Keep them in their existing locations when running the notebooks. Generated results are saved separately in `results/`, and PNG/PDF plots in `figures/`.
+The files below are included in the repository. Keep them in their existing locations when running the notebooks. Generated numerical results are saved separately in `results/`. Rendered PNG/PDF figures are included in `figures/` and can be regenerated with the notebooks.
 
 | File | Contents / use |
 |---|---|

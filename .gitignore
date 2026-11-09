@@ -1,4 +1,4 @@
-# Downloaded rasters and generated outputs; preserve empty directories in Git.
+# Keep raw rasters and numerical outputs local; track published PNG/PDF figures.
 /data/raw/*
 !/data/raw/.gitkeep
 !/data/raw/README.md
@@ -6,6 +6,8 @@
 !/results/.gitkeep
 /figures/*
 !/figures/.gitkeep
+!/figures/*.png
+!/figures/*.pdf
 
 # Required small inputs in data/reference and data/covariate_adjustment ARE tracked.
 __pycache__/

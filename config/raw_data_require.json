@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "scope": "Union of the raw raster inputs used by the main-figure paired calculation; supplementary-only or unused raster variants are not included.",
+  "raster_root": "raw",
+  "required_rasters": {
+    "deaa": {
+      "path": "SPEI_deaa001_240504.tif",
+      "description": "Elephant-affected area mask, main period",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3a,c,d",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Select elephant-affected pixels",
+      "input_scale": "Study mask coding; zero excluded"
+    },
+    "daa": {
+      "path": "SPEI_daa001_240504.tif",
+      "description": "Comparison-area mask, main period",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3a,c,d",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Select comparison pixels",
+      "input_scale": "Study mask coding; zero excluded"
+    },
+    "deaa_1214": {
+      "path": "drought-elephant_area_12-14_241126.tif",
+      "description": "Elephant-affected area mask, 2012-2014",
+      "main_figures": [
+        "Fig. 3b"
+      ],
+      "purpose": "Select pixels for baseline LST comparison",
+      "input_scale": "Study mask coding; zero excluded"
+    },
+    "daa_1214": {
+      "path": "drought-nonelephant_area_12-14_241126.tif",
+      "description": "Comparison-area mask, 2012-2014",
+      "main_figures": [
+        "Fig. 3b"
+      ],
+      "purpose": "Select pixels for baseline LST comparison",
+      "input_scale": "Study mask coding; zero excluded"
+    },
+    "protected_area": {
+      "path": "WDPA_WDOECM_poly_Nov2023_AF_001_afr.tif",
+      "description": "Protected-area mask",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Split protected and non-protected pairs",
+      "input_scale": "Positive values converted to 1; preserve source classes"
+    },
+    "dem": {
+      "path": "gtopoDEM_afr_001.tif",
+      "description": "Elevation",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Pair selection and elevation-difference filtering",
+      "input_scale": "Metres; -9999 excluded"
+    },
+    "slope": {
+      "path": "gtopoSlope_afr_001.tif",
+      "description": "Terrain slope",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Pair selection and slope-difference filtering",
+      "input_scale": "Degrees; zero excluded"
+    },
+    "human_footprint": {
+      "path": "hfp2018_Afirca_001_230525.tif",
+      "description": "Human footprint",
+      "main_figures": [
+        "Fig. 1a,b",
+        "Fig. 3",
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Restrict paired samples to low human footprint",
+      "input_scale": "Source index; code retains values <=15"
+    },
+    "tree_height": {
+      "path": "African_th2019_001_230525.tif",
+      "description": "Tree height",
+      "main_figures": [
+        "Fig. 1a",
+        "Fig. 3c",
+        "Fig. 5"
+      ],
+      "purpose": "Vegetation contrasts, temperature associations and pathways",
+      "input_scale": "Metres; zero excluded"
+    },
+    "tree_cover": {
+      "path": "Africa_tc2019_mosaic_001_fillNaN_231215.tif",
+      "description": "Tree cover",
+      "main_figures": [
+        "Fig. 1b",
+        "Fig. 3d",
+        "Fig. 5"
+      ],
+      "purpose": "Vegetation contrasts, temperature associations and pathways",
+      "input_scale": "Percent (0-100); zero and values >100 excluded"
+    },
+    "lst_1516": {
+      "path": "lst_1516_afr_001.tif",
+      "description": "Land-surface temperature, 2015-2016",
+      "main_figures": [
+        "Fig. 3a,c,d",
+        "Fig. 5"
+      ],
+      "purpose": "Temperature contrasts and pathway models",
+      "input_scale": "Stored MODIS values; converted as x*0.02-273.15"
+    },
+    "lst_1214": {
+      "path": "MOD11_mean_2012-14_001.tif",
+      "description": "Land-surface temperature, 2012-2014",
+      "main_figures": [
+        "Fig. 3b"
+      ],
+      "purpose": "Baseline temperature contrast",
+      "input_scale": "Stored MODIS values; converted as x*0.02-273.15"
+    },
+    "spei": {
+      "path": "SPEI_yrMean_afr_1516_001_sub.tif",
+      "description": "Mean SPEI, 2015-2016",
+      "main_figures": [
+        "Fig. 5"
+      ],
+      "purpose": "Paired mean SPEI in pathway tables and SEM",
+      "input_scale": "Dimensionless study SPEI product; zero excluded"
+    },
+    "ndvi_resistance": {
+      "path": "ndvi_resistance_230321.tif",
+      "description": "NDVI-based drought resistance",
+      "main_figures": [
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Resistance contrasts, sample masks and pathways",
+      "input_scale": "Dimensionless study resistance product; zero excluded"
+    },
+    "sif_resistance": {
+      "path": "csif_resistance_230321.tif",
+      "description": "SIF-based drought resistance",
+      "main_figures": [
+        "Fig. 4",
+        "Fig. 5"
+      ],
+      "purpose": "Resistance contrasts, sample masks and pathways",
+      "input_scale": "Dimensionless study resistance product; zero excluded"
+    },
+    "evapotranspiration": {
+      "path": "evaporation_mean_2015-16_001_afr.tif",
+      "description": "Evapotranspiration, 2015-2016",
+      "main_figures": [
+        "Fig. 5 SEM"
+      ],
+      "purpose": "SEM predictor and complete-case selection",
+      "input_scale": "Preserve study-product units; zero excluded; no scale conversion"
+    },
+    "albedo_2015": {
+      "path": "MCD_albedo_WSA_2015_001.tif",
+      "description": "White-sky albedo, 2015",
+      "main_figures": [
+        "Fig. 5 SEM"
+      ],
+      "purpose": "Combined with 2016 albedo for the SEM",
+      "input_scale": "Stored values divided by 1000, then averaged over 2015-2016"
+    },
+    "albedo_2016": {
+      "path": "MCD_albedo_WSA_2016_001.tif",
+      "description": "White-sky albedo, 2016",
+      "main_figures": [
+        "Fig. 5 SEM"
+      ],
+      "purpose": "Combined with 2015 albedo for the SEM",
+      "input_scale": "Stored values divided by 1000, then averaged over 2015-2016"
+    },
+    "elephant_density": {
+      "path": "ele-density_001_231123.tif",
+      "description": "Gridded elephant density",
+      "main_figures": [
+        "Fig. 5 SEM"
+      ],
+      "purpose": "Elephant-side density in the SEM",
+      "input_scale": "Preserve study-product density scale; no conversion in code"
+    }
+  },
+  "grid": {
+    "shape": [
+      6500,
+      7900
+    ],
+    "transform": [
+      -26,
+      0.01,
+      0,
+      25,
+      0,
+      -0.01
+    ],
+    "coordinates": "geographic degrees"
+  },
+  "pairing": {
+    "input_resolution_degrees": 0.01,
+    "output_resolution_degrees": 0.25,
+    "block_size_pixels": 25,
+    "minimum_valid_fraction": 0.05,
+    "fallback": "highest coverage among eight neighbors; source ordering breaks ties",
+    "dem_difference_limit": 200.0,
+    "slope_difference_limit": 10.0,
+    "spei_output": "mean of DEAA and DAA values, matching archived source"
+  },
+  "optional_display_overlay": {
+    "artifact_key": "mask",
+    "science_arrays_depend_on_it": false,
+    "bundle": "reference/protected_area_display.npz",
+    "shape": [
+      5700,
+      7900
+    ],
+    "extent": [
+      -26,
+      53,
+      -40,
+      17
+    ],
+    "zero_handling": "transparent",
+    "main_figures": [
+      "Fig. 4"
+    ],
+    "description": "Optional supplied display mask; no additional raw raster is required for the default background"
+  },
+  "preparation": "Download sources identified in the manuscript Data Availability statement and prepare the exact study products. Grid harmonization alone does not construct exposure masks, temporal summaries or resistance products.",
+  "availability_notes": [
+    "Raw TIFFs are not included in this repository. Obtain public source datasets using the manuscript and its Data Availability statement, then prepare every listed study input. Notebook 00 checks local file availability and optionally grid alignment; it does not download or prepare the study products.",
+    "The shared raw calculation loads this complete 19-file main-figure union. Individual figure notebooks do not yet prune it to a smaller per-panel subset."
+  ],
+  "non_raster_workflows": [
+    {
+      "main_figures": [
+        "Fig. 1c,d"
+      ],
+      "input": "data/covariate_adjustment/covariate_inputs.npz",
+      "purpose": "Frozen model predictions and observations; nuisance models are not retrained from these TIFFs"
+    },
+    {
+      "main_figures": [
+        "Fig. 2"
+      ],
+      "input": "data/reference/density_inputs.npz",
+      "purpose": "Country and patch density observations; not generated from the raster route"
+    }
+  ]
+}

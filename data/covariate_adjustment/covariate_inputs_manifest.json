@@ -1,0 +1,220 @@
+{
+  "description": "Private-source conversion manifest for frozen African elephant covariate-adjustment inputs.",
+  "source_artifacts_directory": "artifacts",
+  "source_artifacts": {
+    "sampled_df_ps3_buf1_tpb50_ratio5_afr_251014.csv.gz": {
+      "size_bytes": 2380277,
+      "sha256": "d407b87fc26dbea51beb34cad0f05a39302ff06cd3f59f9461722c8a355eccd0"
+    },
+    "gbc_propensity_afr_tc_251014_oof.csv": {
+      "size_bytes": 645270,
+      "sha256": "ba2797bef43dec6c20732beaa418a2dad460cd311060cd4681f4c4e4ededff81"
+    },
+    "gbr_outcome_afr_tc_251014_oof.csv": {
+      "size_bytes": 1497111,
+      "sha256": "4a089b7dd17f8253a2a65525cef76bf8a6c2fb699ecafdad25b5dfc79f9b140a"
+    },
+    "gbc_propensity_afr_tc_251014_meta.json": {
+      "size_bytes": 982,
+      "sha256": "dee79f612b3f53d8fcf89e1494923b5085c145ba84d7beac22ba842fcc5c9aef"
+    },
+    "gbr_outcome_afr_tc_251014_meta.json": {
+      "size_bytes": 186,
+      "sha256": "86f53c422c234e7088eca70b4b56c8b319ceed100debd9a8c41fd792f38ff42f"
+    },
+    "gbc_propensity_afr_th_251014_oof.csv": {
+      "size_bytes": 645270,
+      "sha256": "ba2797bef43dec6c20732beaa418a2dad460cd311060cd4681f4c4e4ededff81"
+    },
+    "gbr_outcome_afr_th_251014_oof.csv": {
+      "size_bytes": 1560577,
+      "sha256": "c0411b70904e574a55d5ecaae6922bbfe0f3be221ba1eba5a91909bbcbec77d6"
+    },
+    "gbc_propensity_afr_th_251014_meta.json": {
+      "size_bytes": 982,
+      "sha256": "dee79f612b3f53d8fcf89e1494923b5085c145ba84d7beac22ba842fcc5c9aef"
+    },
+    "gbr_outcome_afr_th_251014_meta.json": {
+      "size_bytes": 185,
+      "sha256": "b8cd5b7bd51a02a93750163697149e9759c5488f9e5cb20720f36b7f862b6348"
+    },
+    "elephant_effect_results.npz": {
+      "size_bytes": 2114,
+      "sha256": "cd03f0e9ee276f8c9b3327a94cba38f8203a740afde8216c00419d3c5bb431df"
+    }
+  },
+  "conversion": {
+    "parser": "pandas.read_csv with default float parsing (float_precision=None)",
+    "pandas_version": "2.3.1",
+    "numpy_version": "1.26.4",
+    "csv_numeric_conversion": "Values retained as parsed float64; no rounding or row sorting was applied.",
+    "alignment": "OOF key columns, row order, and A checked exactly against the source sample; duplicate w_design values differed by at most 4.440892098500626e-16 and were validated at rtol=0, atol=1e-12; OOF Y checked against the matching outcome at rtol=0, atol=1e-10.",
+    "source_sample_rows": 15992,
+    "source_sample_columns": [
+      "block_id",
+      "row",
+      "col",
+      "A",
+      "w_design",
+      "th_africa",
+      "tc_africa",
+      "hfi_africa",
+      "ffi_africa",
+      "road_africa",
+      "dem_africa",
+      "slope_africa",
+      "soc_africa",
+      "clay_africa",
+      "bulk_africa",
+      "bios1_africa",
+      "bios2_africa",
+      "bios3_africa",
+      "bios4_africa",
+      "bios5_africa",
+      "bios6_africa",
+      "bios7_africa",
+      "bios8_africa",
+      "bios9_africa",
+      "bios10_africa",
+      "bios11_africa",
+      "bios12_africa",
+      "bios13_africa",
+      "bios14_africa",
+      "bios15_africa",
+      "bios16_africa",
+      "bios17_africa",
+      "bios18_africa",
+      "bios19_africa"
+    ],
+    "unique_blocks": 427,
+    "training_performed": false,
+    "object_arrays": false
+  },
+  "archives": {
+    "data/covariate_adjustment/covariate_inputs.npz": {
+      "sha256": "cd426d2cca3d032a5eabf6b75116bd7a6d0891f0579d38034f4b7a4c9e591073",
+      "size_bytes": 2277642,
+      "arrays": {
+        "sample_values": {
+          "shape": [
+            15992,
+            34
+          ],
+          "dtype": "float64"
+        },
+        "sample_columns": {
+          "shape": [
+            34
+          ],
+          "dtype": "<U32"
+        },
+        "e_hat_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m1_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m0_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "yhat_oof_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "e_hat_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m1_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m0_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "yhat_oof_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    "data/reference/covariate_reference.npz": {
+      "sha256": "4756534aa28e4a58d00f98b31ac9fe4ebcdb4825a927a1e84339018449d80783",
+      "size_bytes": 1376,
+      "arrays": {
+        "reference_method_labels": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U16"
+        },
+        "reference_outcome_labels": {
+          "shape": [
+            2
+          ],
+          "dtype": "<U2"
+        },
+        "reference_point_estimates": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "reference_ci_lower": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "reference_ci_upper": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        }
+      },
+      "intervals": "Archived notebook percentile bootstrap outputs, B=100; not recalculated."
+    }
+  },
+  "source_code_and_config": {
+    "patch_config_ps3_buf1_tpb50_ratio5_afr_251014.json": {
+      "source": "patch_config_ps3_buf1_tpb50_ratio5_afr_251014.json",
+      "size_bytes": 725,
+      "sha256": "6443ffd45408073f5319ea77f6913b415efd95119939893b3cc43feba00674cc"
+    },
+    "original_estimator_cell19.py": {
+      "source": "original_estimator_cell19.py",
+      "size_bytes": 11073,
+      "sha256": "292ede7cf1b0cbbf0710cbcd47c6a14f997a3a77edda1cfe67babd2d1f6ab7db"
+    },
+    "remote_causal_forest_Copy1.ipynb": {
+      "source": "remote_causal_forest_Copy1.ipynb",
+      "size_bytes": 1632410,
+      "sha256": "029057dfb5c84de3b44ed5012e4c28ea97de069acfa8eaa4de3726ecf2b2257f",
+      "notebook_sha256": "029057dfb5c84de3b44ed5012e4c28ea97de069acfa8eaa4de3726ecf2b2257f"
+    }
+  }
+}

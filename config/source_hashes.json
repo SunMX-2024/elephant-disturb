@@ -1,0 +1,37 @@
+[
+  {
+    "name": "py_R2_main_figs_250622.ipynb",
+    "bytes": 1899543,
+    "sha256": "53803c489cb0e2e6b04824bb4448dc49251d87bc64e3b962549619f99f642939"
+  },
+  {
+    "name": "py_R2_differences_control_protected areas_250613.ipynb",
+    "bytes": 945117,
+    "sha256": "4dadcc6920f581fe6aba980634f386a40123363c635e9e1538c45f7377f8e552"
+  },
+  {
+    "name": "py_R2_differences_control_protected areas_LST1214_250622.ipynb",
+    "bytes": 21243,
+    "sha256": "e0b1b7993eabfb46077acc8a673afcac787f3d7980d6deb399df90588d445859"
+  },
+  {
+    "name": "py_site_density_figure_251022.ipynb",
+    "bytes": 2442640,
+    "sha256": "d886f0f1fb3e7436fc533b6d269b60028aea6b70b2ab13e1afe9cd9803705721"
+  },
+  {
+    "name": "R_sem_240308_update_250614.R",
+    "bytes": 550,
+    "sha256": "6f563b9b1d39ac75267999ea69a2e7ac0f014941d16155bee938823dbc647e16"
+  },
+  {
+    "name": "remote_causal_forest_Copy1.ipynb",
+    "bytes": 1632410,
+    "sha256": "029057dfb5c84de3b44ed5012e4c28ea97de069acfa8eaa4de3726ecf2b2257f"
+  },
+  {
+    "name": "Main_figure.ipynb",
+    "bytes": 96820,
+    "sha256": "20855a1cd0000fe7c08210a3c7fa2d098293452f10455598a72741993a054ca6"
+  }
+]

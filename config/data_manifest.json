@@ -1,0 +1,943 @@
+{
+  "prepared_date": "2026-11-07",
+  "status": "Compact inputs bundled with the code for the default notebook workflow.",
+  "files": [
+    {
+      "path": "data/reference/covariate_reference.npz",
+      "bytes": 1376,
+      "sha256": "4756534aa28e4a58d00f98b31ac9fe4ebcdb4825a927a1e84339018449d80783",
+      "arrays": {
+        "reference_method_labels": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U16"
+        },
+        "reference_outcome_labels": {
+          "shape": [
+            2
+          ],
+          "dtype": "<U2"
+        },
+        "reference_point_estimates": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "reference_ci_lower": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "reference_ci_upper": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "data/reference/density_inputs.npz",
+      "bytes": 73299,
+      "sha256": "3856d37fda7bc5d6a78f46726e8d8ad87bd42ec58c6693d36d5ac74a57826249",
+      "arrays": {
+        "ele_veg_dens_250613": {
+          "shape": [
+            2,
+            46
+          ],
+          "dtype": "float64"
+        },
+        "ele_veg_val_250613": {
+          "shape": [
+            2,
+            46
+          ],
+          "dtype": "float64"
+        },
+        "ele_veg_std_250613": {
+          "shape": [
+            2,
+            46
+          ],
+          "dtype": "float64"
+        },
+        "country_density_rows": {
+          "shape": [
+            2841,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "country_density_columns": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U32"
+        },
+        "patch_density_rows": {
+          "shape": [
+            2302,
+            4
+          ],
+          "dtype": "float64"
+        },
+        "patch_density_columns": {
+          "shape": [
+            4
+          ],
+          "dtype": "<U32"
+        },
+        "source_files": {
+          "shape": [
+            5
+          ],
+          "dtype": "<U64"
+        },
+        "source_sha256": {
+          "shape": [
+            5
+          ],
+          "dtype": "<U64"
+        },
+        "source_metadata": {
+          "shape": [
+            3
+          ],
+          "dtype": "<U96"
+        }
+      }
+    },
+    {
+      "path": "data/reference/paired_reference.npz",
+      "bytes": 1658168,
+      "sha256": "d85e130c134a27874e35815f15011910d4de9cbecf3d86a850b0a825d8d060ac",
+      "arrays": {
+        "delta_lst1214_protect_250613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_lst1214_protect_pvalue_250613": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64"
+        },
+        "delta_lst1214_unprotect_250613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_250613": {
+          "shape": [
+            6,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_pvalue_250613": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "delta_res_protect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_res_reduc_protect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_res_reduc_unprotect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_res_unprotect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_250613": {
+          "shape": [
+            6,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_pvalue_250613": {
+          "shape": [
+            6
+          ],
+          "dtype": "float64"
+        },
+        "mask_reduc_protect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "mask_reduc_unprotect_250613": {
+          "shape": [
+            2,
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_albedo_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_csif_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_dem_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_dens_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_et_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_lst_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_ndvi_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_slope_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_spei_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_tc_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DAA_treeH_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_albedo_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_csif_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_dem_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_dens_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_et_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_lst_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_ndvi_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_slope_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_spei_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_tc_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_non-protected_DEAA_treeH_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_albedo_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_csif_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_dem_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_dens_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_et_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_lst_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_ndvi_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_slope_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_spei_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_tc_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DAA_treeH_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_albedo_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_csif_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_dem_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_dens_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_et_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_lst_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_ndvi_res_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_slope_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_spei_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_tc_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "Vegetation_structure_protected_DEAA_treeH_0.25deg_25613": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "geo_mask_protected": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_treeH": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_tc": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_lst": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_spei": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_et": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_ndvi_res_reduction_albedo": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_treeH": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_tc": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_lst": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_spei": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_et": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_protect_csif_res_reduction_albedo": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "geo_mask_non_protected": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_treeH": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_tc": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_lst": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_spei": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_et": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_ndvi_res_reduction_albedo": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_treeH": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_tc": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_lst": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_spei": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_et": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "delta_unprotect_csif_res_reduction_albedo": {
+          "shape": [
+            260,
+            316
+          ],
+          "dtype": "float64"
+        },
+        "protected_area_display_coarse": {
+          "shape": [
+            228,
+            316
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/reference/protected_area_display.npz",
+      "bytes": 356377,
+      "sha256": "e78514eb6454b1907bc9c0e07bdd2ce355e66cedd512c1d455fe7c2140298451",
+      "arrays": {
+        "mask": {
+          "shape": [
+            5700,
+            7900
+          ],
+          "dtype": "uint8"
+        },
+        "extent": {
+          "shape": [
+            4
+          ],
+          "dtype": "int32"
+        },
+        "source_sha256": {
+          "shape": [],
+          "dtype": "<U64"
+        }
+      }
+    },
+    {
+      "path": "data/reference/SEM_existing_fit.rds",
+      "bytes": 1962863,
+      "sha256": "9c5d6370c052feccdde1dc0002b3a742b04cdcdef57c49385b478f9c6048262c"
+    },
+    {
+      "path": "data/reference/sem_reference.npz",
+      "bytes": 68926,
+      "sha256": "3328bbd3fea21d9cb8685402f6d394ad8d773a44564e7284a2d6a94c2b439231",
+      "arrays": {
+        "sem_input_values": {
+          "shape": [
+            1381,
+            9
+          ],
+          "dtype": "float64"
+        },
+        "sem_input_row_index": {
+          "shape": [
+            1381
+          ],
+          "dtype": "int64"
+        },
+        "sem_input_columns": {
+          "shape": [
+            9
+          ],
+          "dtype": "<U24"
+        },
+        "reference_lhs": {
+          "shape": [
+            15
+          ],
+          "dtype": "<U24"
+        },
+        "reference_op": {
+          "shape": [
+            15
+          ],
+          "dtype": "<U2"
+        },
+        "reference_rhs": {
+          "shape": [
+            15
+          ],
+          "dtype": "<U24"
+        },
+        "reference_estimate": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_se": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_z": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_pvalue": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_std_lv": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_std_all": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_std_nox": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_std_all_se": {
+          "shape": [
+            15
+          ],
+          "dtype": "float64"
+        },
+        "reference_fit_measure_names": {
+          "shape": [
+            0
+          ],
+          "dtype": "<U24"
+        },
+        "reference_fit_measure_values": {
+          "shape": [
+            0
+          ],
+          "dtype": "float64"
+        },
+        "source_files": {
+          "shape": [
+            3
+          ],
+          "dtype": "<U80"
+        },
+        "source_sha256": {
+          "shape": [
+            3
+          ],
+          "dtype": "<U64"
+        },
+        "source_metadata": {
+          "shape": [
+            5
+          ],
+          "dtype": "<U96"
+        }
+      }
+    },
+    {
+      "path": "data/covariate_adjustment/covariate_inputs.npz",
+      "bytes": 2277642,
+      "sha256": "cd426d2cca3d032a5eabf6b75116bd7a6d0891f0579d38034f4b7a4c9e591073",
+      "arrays": {
+        "sample_values": {
+          "shape": [
+            15992,
+            34
+          ],
+          "dtype": "float64"
+        },
+        "sample_columns": {
+          "shape": [
+            34
+          ],
+          "dtype": "<U32"
+        },
+        "e_hat_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m1_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m0_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "yhat_oof_tc": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "e_hat_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m1_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "m0_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        },
+        "yhat_oof_th": {
+          "shape": [
+            15992
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    {
+      "path": "data/covariate_adjustment/covariate_inputs_manifest.json",
+      "bytes": 6552,
+      "sha256": "23bdc54be35b89ad512bd1c7d9801f22fdc6dd27eee25cd4b7deecec60e078d3"
+    }
+  ],
+  "raw_requirements": "config/raw_data_require.json"
+}

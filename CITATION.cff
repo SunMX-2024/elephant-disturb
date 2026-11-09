@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and the archived code release once its DOI is assigned."
+title: "African elephant vegetation and drought analyses"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Sun
+    given-names: Minxuan
+abstract: "Notebook-first workflows for paired-site comparisons, covariate adjustment, density associations, partial correlations and structural equation modelling."

@@ -1,0 +1,29 @@
+# Downloaded rasters and generated outputs; preserve empty directories in Git.
+/data/raw/*
+!/data/raw/.gitkeep
+!/data/raw/README.md
+/results/*
+!/results/.gitkeep
+/figures/*
+!/figures/.gitkeep
+
+# Required small inputs in data/reference and data/covariate_adjustment ARE tracked.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv*/
+venv/
+.conda/
+.validation*/
+*.egg-info/
+build/
+dist/
+*.csv
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

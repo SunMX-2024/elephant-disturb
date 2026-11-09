@@ -1,0 +1,32 @@
+{
+  "matching": {
+    "min_per_group": 5,
+    "caliper_mult": 0.1,
+    "ratio_max": 5,
+    "random_state": 42,
+    "pair_weight": "design",
+    "with_replacement": true,
+    "winsorize_diff": null
+  },
+  "ipw": {
+    "use_design_weight": true,
+    "clip": [0.1, 0.9],
+    "trim": [0.1, 0.9],
+    "min_per_group": 5,
+    "block_weight": "design"
+  },
+  "gcomp": {
+    "use_design_weight": true
+  },
+  "dr": {
+    "use_design_weight": true,
+    "clip": [0.1, 0.9],
+    "trim": [0.1, 0.9],
+    "trim_on": "aug",
+    "weighted_trim_by_outcome": {
+      "tc": false,
+      "th": true
+    },
+    "cluster_se": false
+  }
+}

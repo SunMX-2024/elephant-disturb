@@ -1,0 +1,11 @@
+{
+  "input_mode": "reference",
+  "data_root": "data",
+  "results_root": "results",
+  "figures_root": "figures",
+  "paired_window_pixels": 25,
+  "random_seed": 42,
+  "status": "Bundled-input notebook workflow; see README.md for raw-data coverage and execution modes.",
+  "version": "0.1.0",
+  "raw_requirements": "config/raw_data_require.json"
+}
